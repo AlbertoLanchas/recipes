@@ -1,0 +1,40 @@
+{
+  "cli": {
+    "version": ">= 16.19.3",
+    "appVersionSource": "remote"
+  },
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal"
+    },
+    "preview": {
+      "distribution": "internal"
+    },
+    "production": {
+      "autoIncrement": true,
+      "android": {
+        "buildType": "app-bundle"
+      },
+      "ios": {
+        "resourceClass": "m-medium"
+      },
+      "channel": "production"
+    },
+    "simulator": {
+      "extends": "development",
+      "ios": {
+        "simulator": true,
+        "buildConfiguration": "Debug"
+      },
+      "channel": "simulator"
+    },
+    "android": {
+      "extends": "development",
+      "channel": "android"
+    }
+  },
+  "submit": {
+    "production": {}
+  }
+}

@@ -1,0 +1,387 @@
+# Gaming Avatar App - Design System
+
+Una aplicación móvil moderna con React Native y Expo que implementa un sistema de diseño inspirado en interfaces de gaming con estética futurista y elementos visuales llamativos.
+
+## 🎨 Paleta de Colores
+
+### Colores Primarios
+```css
+/* Morados - Color principal de la marca */
+--primary-purple: #8B5CF6
+--primary-purple-light: #A855F7
+--primary-purple-dark: #7C3AED
+
+/* Gradientes principales */
+--gradient-primary: linear-gradient(135deg, #8B5CF6, #A855F7)
+--gradient-secondary: linear-gradient(135deg, #9945FF, #8B5CF6, #A855F7)
+```
+
+### Colores Secundarios
+```css
+/* Rosa/Magenta - Acentos y elementos destacados */
+--accent-pink: #FF6B9D
+--accent-pink-light: #EC4899
+--accent-pink-dark: #DB2777
+
+/* Azul Cyan - Elementos informativos */
+--info-cyan: #06B6D4
+--info-cyan-light: #0891B2
+--info-cyan-dark: #0E7490
+
+/* Dorado - Elementos premium y recompensas */
+--gold: #FFD700
+--gold-light: #FFA500
+--gold-dark: #FF8C00
+
+/* Verde - Estados de éxito y confirmación */
+--success-green: #22C55E
+--success-green-light: #10B981
+--success-green-dark: #059669
+
+/* Amarillo - Alertas y elementos de atención */
+--warning-yellow: #F59E0B
+--warning-yellow-light: #EAB308
+--warning-yellow-dark: #D97706
+```
+
+### Sistema de Colores por Rareza
+```css
+/* Sistema de rareza para items/avatares */
+--rarity-common: #6B7280, #4B5563
+--rarity-rare: #06B6D4, #0891B2
+--rarity-epic: #9945FF, #8B5CF6
+--rarity-legendary: #FFD700, #FFA500
+--rarity-mythic: #FF6B9D, #EC4899, #DB2777
+```
+
+### Colores de Fondo y Superficies
+
+#### Tema Oscuro
+```css
+--bg-primary-dark: #1a2038
+--bg-secondary-dark: #2a1842
+--bg-surface-dark: rgba(255, 255, 255, 0.05)
+--bg-surface-elevated-dark: rgba(255, 255, 255, 0.1)
+--bg-glass-dark: rgba(26, 32, 56, 0.9)
+```
+
+#### Tema Claro
+```css
+--bg-primary-light: #f8fafc
+--bg-secondary-light: #e7e3ff
+--bg-tertiary-light: #f1f5f9
+--bg-surface-light: rgba(255, 255, 255, 0.8)
+--bg-surface-elevated-light: rgba(255, 255, 255, 0.9)
+--bg-glass-light: rgba(255, 255, 255, 0.9)
+```
+
+### Colores de Texto
+
+#### Tema Oscuro
+```css
+--text-primary-dark: #ffffff
+--text-secondary-dark: #d1d5db
+--text-tertiary-dark: #9ca3af
+--text-muted-dark: #6b7280
+```
+
+#### Tema Claro
+```css
+--text-primary-light: #1e293b
+--text-secondary-light: #4b5563
+--text-tertiary-light: #6b7280
+--text-muted-light: #9ca3af
+```
+
+## 🎭 Efectos Visuales
+
+### Gradientes Principales
+```css
+/* Gradiente de fondo principal */
+background: linear-gradient(180deg, #1a2038 0%, #2a1842 50%, #1a2038 100%)
+
+/* Gradiente de cards y superficies */
+background: linear-gradient(135deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.05) 100%)
+
+/* Gradiente de botones primarios */
+background: linear-gradient(135deg, #8B5CF6 0%, #A855F7 100%)
+
+/* Gradiente de elementos premium */
+background: linear-gradient(135deg, #FFD700 0%, #FFA500 50%, #FF8C00 100%)
+
+/* Gradiente de elementos míticos */
+background: linear-gradient(135deg, #FF6B9D 0%, #EC4899 50%, #DB2777 100%)
+```
+
+### Efectos de Glassmorphism
+```css
+/* Efecto de cristal para cards */
+background: rgba(255, 255, 255, 0.1);
+backdrop-filter: blur(20px);
+border: 1px solid rgba(255, 255, 255, 0.2);
+border-radius: 20px;
+
+/* Efecto de cristal para modales */
+background: rgba(26, 32, 56, 0.95);
+backdrop-filter: blur(30px);
+border: 1px solid rgba(139, 92, 246, 0.3);
+```
+
+### Sombras y Elevación
+```css
+/* Sombra suave para cards */
+box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+
+/* Sombra para elementos flotantes */
+box-shadow: 0 12px 40px rgba(139, 92, 246, 0.3);
+
+/* Sombra para elementos premium */
+box-shadow: 0 8px 32px rgba(255, 215, 0, 0.2);
+```
+
+## 📐 Sistema de Espaciado
+
+### Espaciado Base (8px)
+```css
+--spacing-xs: 4px    /* 0.5 unidades */
+--spacing-sm: 8px    /* 1 unidad */
+--spacing-md: 16px   /* 2 unidades */
+--spacing-lg: 24px   /* 3 unidades */
+--spacing-xl: 32px   /* 4 unidades */
+--spacing-2xl: 48px  /* 6 unidades */
+--spacing-3xl: 64px  /* 8 unidades */
+```
+
+### Radios de Borde
+```css
+--radius-sm: 8px     /* Elementos pequeños */
+--radius-md: 12px    /* Botones y chips */
+--radius-lg: 16px    /* Cards pequeñas */
+--radius-xl: 20px    /* Cards principales */
+--radius-2xl: 24px   /* Modales y containers */
+--radius-full: 50%   /* Elementos circulares */
+```
+
+## 🔤 Tipografía
+
+### Jerarquía de Texto
+```css
+/* Títulos principales */
+--text-4xl: 32px, font-weight: 800, letter-spacing: 1px
+--text-3xl: 28px, font-weight: 700, letter-spacing: 0.5px
+--text-2xl: 24px, font-weight: 700, letter-spacing: 0.5px
+--text-xl: 20px, font-weight: 700, letter-spacing: 0.5px
+
+/* Texto de contenido */
+--text-lg: 18px, font-weight: 600
+--text-base: 16px, font-weight: 500
+--text-sm: 14px, font-weight: 500
+--text-xs: 12px, font-weight: 500
+
+/* Texto especial */
+--text-caption: 10px, font-weight: 700, letter-spacing: 1px, text-transform: uppercase
+```
+
+### Alturas de Línea
+```css
+--leading-tight: 120%    /* Para títulos */
+--leading-normal: 150%   /* Para texto de contenido */
+--leading-relaxed: 160%  /* Para texto largo */
+```
+
+## 🎯 Componentes de UI
+
+### Cards
+```css
+/* Card principal */
+background: linear-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0.05));
+border: 1px solid rgba(139, 92, 246, 0.3);
+border-radius: 20px;
+padding: 20px;
+backdrop-filter: blur(20px);
+
+/* Card con efecto hover */
+transform: scale(1.02);
+box-shadow: 0 12px 40px rgba(139, 92, 246, 0.4);
+```
+
+### Botones
+```css
+/* Botón primario */
+background: linear-gradient(135deg, #8B5CF6, #A855F7);
+border-radius: 25px;
+padding: 15px 30px;
+color: #ffffff;
+font-weight: 600;
+
+/* Botón secundario */
+background: rgba(255, 255, 255, 0.1);
+border: 1px solid rgba(255, 255, 255, 0.2);
+border-radius: 20px;
+backdrop-filter: blur(10px);
+```
+
+### Badges y Chips
+```css
+/* Badge de rareza */
+background: rgba(245, 158, 11, 0.2);
+border-radius: 12px;
+padding: 4px 8px;
+font-size: 10px;
+font-weight: 700;
+letter-spacing: 0.5px;
+text-transform: uppercase;
+
+/* Chip de filtro activo */
+background: linear-gradient(135deg, #8B5CF6, #A855F7);
+color: #ffffff;
+border-radius: 20px;
+padding: 10px 20px;
+```
+
+## 🎨 Efectos de Animación
+
+### Transiciones
+```css
+/* Transición suave estándar */
+transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+/* Transición para hover */
+transition: transform 0.2s ease-out, box-shadow 0.2s ease-out;
+
+/* Transición para colores */
+transition: background-color 0.3s ease, border-color 0.3s ease;
+```
+
+### Transformaciones 3D
+```css
+/* Efecto 3D para carrusel */
+transform: perspective(1000px) rotateY(25deg) scale(0.8);
+
+/* Efecto de elevación */
+transform: translateY(-4px) scale(1.02);
+
+/* Efecto de glow */
+box-shadow: 0 0 30px rgba(139, 92, 246, 0.6);
+```
+
+## 🌟 Elementos Especiales
+
+### Indicadores de Estado
+```css
+/* Estado online */
+background: #22C55E;
+border-radius: 50%;
+width: 12px;
+height: 12px;
+
+/* Indicador de notificación */
+background: #FF6B9D;
+border-radius: 50%;
+min-width: 18px;
+height: 18px;
+```
+
+### Barras de Progreso
+```css
+/* Contenedor de barra */
+background: rgba(139, 92, 246, 0.2);
+border-radius: 3px;
+height: 6px;
+
+/* Relleno de progreso */
+background: linear-gradient(135deg, #8B5CF6, #A855F7);
+border-radius: 3px;
+height: 100%;
+```
+
+### Efectos de Glow
+```css
+/* Glow suave */
+box-shadow: 0 0 20px rgba(139, 92, 246, 0.3);
+
+/* Glow intenso para elementos premium */
+box-shadow: 0 0 40px rgba(255, 215, 0, 0.5);
+
+/* Glow para elementos míticos */
+box-shadow: 0 0 30px rgba(255, 107, 157, 0.4);
+```
+
+## 📱 Responsive Design
+
+### Breakpoints
+```css
+--mobile: 375px
+--tablet: 768px
+--desktop: 1024px
+```
+
+### Dimensiones de Cards
+```css
+/* Card del carrusel */
+width: 70% of screen width
+height: width * 1.3
+margin: 20px
+
+/* Card de grid */
+width: (screen width - 60px) / 2
+aspect-ratio: 1:1.2
+```
+
+## 🎮 Elementos Gaming
+
+### Sistema de Rareza Visual
+- **Common**: Gris con brillo sutil
+- **Rare**: Azul cyan con efecto de agua
+- **Epic**: Morado con partículas brillantes
+- **Legendary**: Dorado con rayos de luz
+- **Mythic**: Rosa/magenta con efecto de fuego
+
+### Efectos de Partículas
+```css
+/* Partículas flotantes */
+animation: float 3s ease-in-out infinite;
+
+/* Brillo pulsante */
+animation: pulse 2s ease-in-out infinite;
+
+/* Rotación suave */
+animation: rotate 10s linear infinite;
+```
+
+## 🔧 Implementación Técnica
+
+### React Native Styles
+```javascript
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    background: 'linear-gradient(180deg, #1a2038 0%, #2a1842 50%, #1a2038 100%)',
+  },
+  card: {
+    backgroundColor: 'rgba(255, 255, 255, 0.1)',
+    borderRadius: 20,
+    padding: 20,
+    borderWidth: 1,
+    borderColor: 'rgba(139, 92, 246, 0.3)',
+  },
+  primaryButton: {
+    backgroundColor: '#8B5CF6',
+    borderRadius: 25,
+    paddingVertical: 15,
+    paddingHorizontal: 30,
+  },
+});
+```
+
+### Componentes con Tema
+```javascript
+const getThemeColors = (theme) => ({
+  background: theme === 'dark' ? '#1a2038' : '#f8fafc',
+  surface: theme === 'dark' ? 'rgba(255,255,255,0.1)' : 'rgba(255,255,255,0.8)',
+  text: theme === 'dark' ? '#ffffff' : '#1e293b',
+  textSecondary: theme === 'dark' ? '#d1d5db' : '#4b5563',
+});
+```
+
+Este sistema de diseño proporciona una base sólida para crear interfaces modernas y atractivas con una estética gaming futurista, manteniendo consistencia visual y una experiencia de usuario fluida.
